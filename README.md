@@ -15,8 +15,8 @@ This sample uses:
 - Azure Blob Storage
 
 ## Required Changes
-- **Config.JSON.sample**: You will need to update this config file with the details for your Azure services and rename this file to config.json.
-- **schema.JSON**: This file is used to create an Index that leverages integrated vectorization. For this reason you will need to set this to use your Azure OpenAI Embeddings endpoint by updating:
+- **config.json.sample**: You will need to update this config file with the details for your Azure services and rename this file to config.json.
+- **schema.json**: This file is used to create an Index that leverages integrated vectorization. For this reason you will need to set this to use your Azure OpenAI Embeddings endpoint by updating:
           "resourceUri": "https://[OPENAI_SERVICE].openai.azure.com",
           "deploymentId": "[OPENAI deploymentId]",
           "apiKey": "[OPENAI API KEY]",
