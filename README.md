@@ -14,10 +14,14 @@ This sample uses:
 - Azure Document Intelligence
 - Azure Blob Storage
 
-## Config.JSON.sample
-You will need to update this config file with the details for your Azure services and rename this file to config.json.
+## Required Changes
+- **Config.JSON.sample**: You will need to update this config file with the details for your Azure services and rename this file to config.json.
+- **schema.JSON**: This file is used to create an Index that leverages integrated vectorization. For this reason you will need to set this to use your Azure OpenAI Embeddings endpoint by updating:
+          "resourceUri": "https://[OPENAI_SERVICE].openai.azure.com",
+          "deploymentId": "[OPENAI deploymentId]",
+          "apiKey": "[OPENAI API KEY]",
 
 ## Future Goals
 1) Create a set of Azure Functions that will be triggered automatically when new content is added or changed in Azure Blob to do processing and indexing
 2) Add different approaches including support for chunking of content using GPT4
-# azure-ai-search-vector-indexing
+
