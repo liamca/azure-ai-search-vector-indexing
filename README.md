@@ -6,6 +6,7 @@ There are 3 Notebooks which:
 1) Create an Azure AI Search Index -- This can be modified using the schema.json file in the event you want to change langugage analyzers, add additional fields for filtering and personalization of content or to add support for document access control
 2) Process Content -- This will take content stored in an Azure Blob Storage account and process it. It does all the chunking and vectorization of content for most common file types. This can be extended in the event you wish to add additional file types. It currently used Azure Document Intelligence for the processing of the file, but that could be changed if needed. All of the processed content is then stored in a set of JSON files which makes doing BCDR or Geo-replication much simpler
 3) Index Content - This will take the content stored in the JSON files from the previous step and index them into Azure AI Search. You may wish to rather upload the JSON files to a separate Blob container and use the Azure AI Search indexer.
+4) Test Queries - Notebook for executing search queries (Vector, Hybrid and Semantic) directly against Azure AI Search. This is useful for doing validation of different approaches.
 
 ## Required Azure Services
 This sample uses:
