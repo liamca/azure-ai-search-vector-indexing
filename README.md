@@ -2,7 +2,7 @@
 
 The goal of thie repo is to enable a code based approach for Chunking, Enriching and Vectorizing content into an Azure AI Search Index. It is meant to be easily extensible so that you can try different approaches of preparing your content for the purposes of doing Chat over your Data.
 
-There are 3 Notebooks which:
+## Notebooks:
 1) Create an Azure AI Search Index -- This can be modified using the schema.json file in the event you want to change langugage analyzers, add additional fields for filtering and personalization of content or to add support for document access control
 2) Process Content -- This will take content stored in an Azure Blob Storage account and process it. It does all the chunking and vectorization of content for most common file types. This can be extended in the event you wish to add additional file types. It currently used Azure Document Intelligence for the processing of the file, but that could be changed if needed. All of the processed content is then stored in a set of JSON files which makes doing BCDR or Geo-replication much simpler
 3) Index Content - This will take the content stored in the JSON files from the previous step and index them into Azure AI Search. You may wish to rather upload the JSON files to a separate Blob container and use the Azure AI Search indexer.
