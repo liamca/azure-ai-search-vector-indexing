@@ -1,0 +1,21 @@
+{
+    "data_root_dir" : "[Local drectory where content will be stored and processed]",
+    "search_service_name": "[Search Service Name - Not the URL]",
+    "search_admin_key" : "[Search Service Key]",
+    "search_index_name": "[Name of the Azure AI Search Index]",
+    "search_index_schema_file": "schema.json",
+    "search_api_version" : "2023-10-01-Preview",  
+    "blob_service_name" : "[]",
+    "blob_container" : "[Blob Container Name where content is stored]",
+    "blob_key" : "[Blob Key]",
+    "openai_api_base" : "https://[Azure OpenAI Service Name].openai.azure.com/",
+    "openai_api_key" : "[Azure OpenAI Key]",
+    "openai_api_version" :  "2023-05-15",
+    "openai_embedding_model" : "[Azure OpenAI Model Name]" ,
+    "doc_intelligence_endpoint" : "https://[Document Intelligence Service Name].cognitiveservices.azure.com/",
+    "doc_intelligence_apim_key" : "[Document Intelligence APIM Key]"
+}
+
+
+
+
