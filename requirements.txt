@@ -1,0 +1,8 @@
+requests
+azure-search-documents
+azure-storage-blob
+langchain==0.1.3 --user
+openai
+tenacity
+pdfkit
+tiktoken
