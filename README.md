@@ -8,6 +8,12 @@ The goal of thie repo is to enable a code based approach for Chunking, Enriching
 3) Index Content - This will take the content stored in the JSON files from the previous step and index them into Azure AI Search. You may wish to rather upload the JSON files to a separate Blob container and use the Azure AI Search indexer.
 4) Test Queries - Notebook for executing search queries (Vector, Hybrid and Semantic) directly against Azure AI Search. This is useful for doing validation of different approaches.
 
+## Important
+Please ensure you install required packages
+```
+pip install -r requirements.txt
+```
+
 ## Required Azure Services
 This sample uses:
 - Azure AI Search
