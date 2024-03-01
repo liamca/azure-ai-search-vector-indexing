@@ -21,6 +21,12 @@ Ensure you install required packages:
 pip install -r requirements.txt
 ```
 
+This notebook has only been tested on Linux. If you have files other than PDF, you will need to install converters as follows:
+```
+sudo apt-get install wkhtmltopdf
+sudo apt-get install libreoffice
+```
+
 ## Notebooks:
 1) Create an Azure AI Search Index -- This can be modified using the schema.json file in the event you want to change langugage analyzers, add additional fields for filtering and personalization of content or to add support for document access control
 2) Process Content -- This will take content stored in an Azure Blob Storage account and process it. It does all the chunking and vectorization of content for most common file types. This can be extended in the event you wish to add additional file types. It currently used Azure Document Intelligence for the processing of the file, but that could be changed if needed. All of the processed content is then stored in a set of JSON files which makes doing BCDR or Geo-replication much simpler
