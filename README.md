@@ -23,6 +23,7 @@ pip install -r requirements.txt
 
 This notebook has only been tested on Linux. If you have files other than PDF, you will need to install converters as follows:
 ```
+sudo apt-get update
 sudo apt-get install wkhtmltopdf
 sudo apt-get install libreoffice
 ```
